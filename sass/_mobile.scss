@@ -6,12 +6,27 @@
   .main {
     min-height: 100svh;
     .app-header {
-        padding: 4em;
+      padding: 3em;
       &__name {
         text-align: center;
         font-size: $secondary-size;
         color: $very-dark-cyan;
         letter-spacing: 0.5em;
+      }
+    }
+    .app-body {
+      display: flex;
+      
+      flex-direction: column;
+      width: 100%;
+      background-color: $white;
+      padding: 1em 1.5em;
+      border-top-right-radius: 1.75em;
+      border-top-left-radius: 1.75em;
+      .bill-section{
+       &__bill{
+        color: $dark-grayish-cyan;
+       }
       }
     }
   }
