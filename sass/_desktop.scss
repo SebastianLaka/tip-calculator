@@ -1,0 +1,14 @@
+@use './reset' as *;
+@use './fonts' as *;
+@use './colors' as *;
+
+@media(min-width: 992px){
+    body{
+        background-color: $dark-grayish-cyan;
+        p{
+            color: blue;
+            font-size: $secondary-size;
+            font-weight: $primary-weight;
+        }
+    }
+}
