@@ -6,12 +6,17 @@
 }
 
 @media (min-width: 280px) {
-  body {
-    background-color: hsl(189, 41%, 97%);
+  .main {
+    min-height: 100svh;
   }
-  body p {
-    color: green;
-    font-size: 1rem;
+  .main .app-header {
+    padding: 4em;
+  }
+  .main .app-header__name {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 0.5em;
   }
 }
 @media (min-width: 992px) {
@@ -26,4 +31,5 @@
 }
 body {
   font-family: "Space Mono", sans-serif;
+  background-color: hsl(185, 41%, 84%);
 }/*# sourceMappingURL=style.css.map */
