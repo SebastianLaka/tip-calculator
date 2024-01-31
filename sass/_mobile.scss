@@ -27,11 +27,11 @@
        .price-area{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: .75em;
         &__dollar-symbol{
-          font-size: $secondary-size;
-          color: $dark-grayish-cyan;
-          
+        width: 1em;
+        height: 1em;
         }
         &__input{
             font-family: inherit;
