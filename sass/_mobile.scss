@@ -6,13 +6,10 @@
   .main {
     min-height: 100svh;
     .app-header {
-      padding: 3em;
-      &__name {
-        text-align: center;
-        font-size: $secondary-size;
-        color: $very-dark-cyan;
-        letter-spacing: 0.5em;
-      }
+      background-image: url(../img/logo.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 4.5em;
     }
     .app-body {
       background-color: $white;
