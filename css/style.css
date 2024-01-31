@@ -24,6 +24,9 @@
     border-top-right-radius: 1.75em;
     border-top-left-radius: 1.75em;
   }
+  .main .app-body .bill-section {
+    padding: 1em 0;
+  }
   .main .app-body .bill-section__bill {
     color: hsl(186, 14%, 43%);
   }
@@ -36,9 +39,15 @@
             justify-content: space-between;
     padding: 0.75em;
   }
+  .main .app-body .bill-section .price-area__dollar-symbol {
+    font-size: 1.5rem;
+    color: hsl(183, 100%, 15%);
+  }
   .main .app-body .bill-section .price-area__input {
     font-family: inherit;
     text-align: right;
+    font-size: 1.5rem;
+    border: none;
   }
 }
 @media (min-width: 992px) {

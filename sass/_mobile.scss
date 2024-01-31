@@ -20,6 +20,7 @@
       border-top-right-radius: 1.75em;
       border-top-left-radius: 1.75em;
       .bill-section{
+        padding: 1em 0;
        &__bill{
         color: $dark-grayish-cyan;
        }
@@ -27,9 +28,16 @@
         display: flex;
         justify-content: space-between;
         padding: .75em;
+        &__dollar-symbol{
+          font-size: $secondary-size;
+          color: $very-dark-cyan;
+          
+        }
         &__input{
             font-family: inherit;
             text-align: right;
+            font-size: $secondary-size;
+            border: none;
         }
        }
       }
