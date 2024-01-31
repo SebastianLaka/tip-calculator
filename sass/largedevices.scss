@@ -1,0 +1,29 @@
+@use "./reset" as *;
+@use "./fonts" as *;
+@use "./colors" as *;
+
+@media (min-width: 992px) {
+  .main {
+    padding: 3.5em 0;
+    height: 100lvh;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    .app-header {
+      &__name {
+        font-size: $primary-size;
+      }
+    }
+    .app-body{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 80%;
+        border-radius: 1.75em;
+        
+        .bill-section{
+          padding: 1.25em;
+        }
+    }
+  }
+}

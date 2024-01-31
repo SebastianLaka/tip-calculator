@@ -55,7 +55,7 @@
   .main {
     padding: 3.5em 0;
     height: 100lvh;
-    max-width: 1100px;
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
   }
@@ -71,6 +71,11 @@
   }
   .main .app-body .bill-section {
     padding: 1.25em;
+  }
+}
+@media (min-width: 1100px) {
+  .main {
+    max-width: 1100px;
   }
 }
 body {

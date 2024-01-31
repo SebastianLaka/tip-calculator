@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 992px) {
+  .main {
+    padding: 3.5em 0;
+    height: 100lvh;
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .main .app-header__name {
+    font-size: 1rem;
+  }
+  .main .app-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 80%;
+    border-radius: 1.75em;
+  }
+  .main .app-body .bill-section {
+    padding: 1.25em;
+  }
+}/*# sourceMappingURL=largedevices.css.map */

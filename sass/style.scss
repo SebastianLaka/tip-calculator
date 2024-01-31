@@ -3,6 +3,7 @@
 @use './fonts' as *;
 
 @use './mobile' as *;
+@use './largedevices.scss' as *;
 @use './desktop' as *;
 
 body{
