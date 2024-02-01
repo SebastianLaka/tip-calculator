@@ -70,8 +70,34 @@
   .main .app-body .tip-area .tip-buttons-area__button {
     padding: 0.5em 1em;
     border-radius: 0.4em;
+    border: none;
     width: 45%;
-    margin: 0.5em 0;
+    margin: 0.75em 0;
+    font-size: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .main .app-body .tip-area .tip-buttons-area__button--custom {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(186, 14%, 43%);
+    text-align: center;
+  }
+  .main .app-body .tip-area .tip-buttons-area__button--custom::-webkit-input-placeholder {
+    color: hsl(186, 14%, 43%);
+  }
+  .main .app-body .tip-area .tip-buttons-area__button--custom::-moz-placeholder {
+    color: hsl(186, 14%, 43%);
+  }
+  .main .app-body .tip-area .tip-buttons-area__button--custom:-ms-input-placeholder {
+    color: hsl(186, 14%, 43%);
+  }
+  .main .app-body .tip-area .tip-buttons-area__button--custom::-ms-input-placeholder {
+    color: hsl(186, 14%, 43%);
+  }
+  .main .app-body .tip-area .tip-buttons-area__button--custom::placeholder {
+    color: hsl(186, 14%, 43%);
   }
 }
 @media (min-width: 992px) {
