@@ -14,16 +14,26 @@
 
 <body>
     <main class="main">
-        <div class="app-header">
-        </div>
+        <div class="app-header"></div>
         <div class="app-body">
-           <div class="bill-section">
-            <p class="bill-section__bill">Bill</p>
-            <div class="price-area">
-                <img class="price-area__dollar-symbol" src="./img/icon-dollar.svg" alt="Dollar icon">
-                <input type="text" class="price-area__input" placeholder="0">
+            <div class="bill-section">
+                <p class="bill-section__bill">Bill</p>
+                <div class="price-area">
+                    <img class="price-area__dollar-symbol" src="./img/icon-dollar.svg" alt="Dollar icon">
+                    <input type="text" class="price-area__input" placeholder="0">
+                </div>
             </div>
-           </div>
+            <div class="tip-area">
+                <p class="tip-area__heading">Select tip %</p>
+                <div class="tip-buttons-area">
+                    <button class="tip-buttons-area__button">5%</button>
+                    <button class="tip-buttons-area__button">10%</button>
+                    <button class="tip-buttons-area__button">15%</button>
+                    <button class="tip-buttons-area__button">25%</button>
+                    <button class="tip-buttons-area__button">50%</button>
+                    <button class="tip-buttons-area__button tip-buttons-area__button--custom">Custom</button>
+                </div>
+            </div>
         </div>
     </main>
     <script src="./app.js/script.js"></script>

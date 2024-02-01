@@ -39,6 +39,24 @@
         }
        }
       }
+      .tip-area{
+        &__heading{
+          color: $dark-grayish-cyan;
+        }
+        .tip-buttons-area{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: .75em 0;
+          &__button{
+            padding: .5em 1em;
+            border-radius: .4em;
+            width: 45%;
+            margin: .5em 0;
+          }
+        }
+      }
     }
   }
 }

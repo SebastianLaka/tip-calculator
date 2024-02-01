@@ -17,11 +17,17 @@
     .app-body{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
         height: 80%;
         border-radius: 1.75em;
         .bill-section{
           padding: 1.25em;
+          grid-row: 0/1;
+        }
+        .tip-area{
+          grid-column: 0/1;
+          grid-row: 2/3;
         }
     }
   }
