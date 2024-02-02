@@ -17,7 +17,7 @@
       border-top-right-radius: 1.75em;
       border-top-left-radius: 1.75em;
       .bill-section {
-        padding: 1em 0;
+        padding: .75em 0;
         &__bill {
           color: $dark-grayish-cyan;
         }
@@ -63,12 +63,27 @@
             &--custom {
               background-color: $white;
               color: $dark-grayish-cyan;
-
               text-align: center;
               &::placeholder {
                 color: $dark-grayish-cyan;
               }
             }
+          }
+        }
+      }
+      .people-area {
+        padding: 0.1em 0;
+        &__heading {
+          color: $dark-grayish-cyan;
+        }
+        .amount-people {
+          padding: .5em 0.6em;
+          &__input {
+            font-family: inherit;
+            text-align: right;
+            font-size: $secondary-size;
+            border: none;
+            width: 90%;
           }
         }
       }

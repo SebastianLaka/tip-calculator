@@ -28,10 +28,14 @@
   }
   .main .app-body .bill-section {
     padding: 1.25em;
-    grid-row: 0/1;
+    grid-column: 0/1;
   }
   .main .app-body .tip-area {
     grid-column: 0/1;
     grid-row: 2/3;
+  }
+  .main .app-body .people-area {
+    grid-column: 0/1;
+    grid-row: 3/4;
   }
 }/*# sourceMappingURL=largedevices.css.map */

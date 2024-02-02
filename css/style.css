@@ -22,7 +22,7 @@
     border-top-left-radius: 1.75em;
   }
   .main .app-body .bill-section {
-    padding: 1em 0;
+    padding: 0.75em 0;
   }
   .main .app-body .bill-section__bill {
     color: hsl(186, 14%, 43%);
@@ -99,6 +99,22 @@
   .main .app-body .tip-area .tip-buttons-area__button--custom::placeholder {
     color: hsl(186, 14%, 43%);
   }
+  .main .app-body .people-area {
+    padding: 0.1em 0;
+  }
+  .main .app-body .people-area__heading {
+    color: hsl(186, 14%, 43%);
+  }
+  .main .app-body .people-area .amount-people {
+    padding: 0.5em 0.6em;
+  }
+  .main .app-body .people-area .amount-people__input {
+    font-family: inherit;
+    text-align: right;
+    font-size: 1.5rem;
+    border: none;
+    width: 90%;
+  }
 }
 @media (min-width: 992px) {
   .main {
@@ -123,11 +139,17 @@
   }
   .main .app-body .bill-section {
     padding: 1.25em;
-    grid-row: 0/1;
+    grid-column: 0/1;
   }
   .main .app-body .tip-area {
     grid-column: 0/1;
     grid-row: 2/3;
+    padding: 0.1em;
+  }
+  .main .app-body .people-area {
+    grid-column: 0/1;
+    grid-row: 3/4;
+    padding: 0.1em;
   }
 }
 body {
