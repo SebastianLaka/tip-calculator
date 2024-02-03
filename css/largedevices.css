@@ -9,7 +9,7 @@
   .main {
     padding: 3.5em 0;
     height: 100lvh;
-    max-width: 950px;
+    max-width: 975px;
     width: 100%;
     margin: 0 auto;
   }
@@ -41,7 +41,10 @@
     grid-row: 2/3;
   }
   .main .app-body .tip-area .tip-buttons-area__button {
-    width: 30%;
+    width: 31%;
+    margin: 0.25em 0;
+    padding: 0.25em 1em;
+    font-size: 1.5rem;
   }
   .main .app-body .people-area {
     grid-column: 0/1;
@@ -51,12 +54,12 @@
   .main .app-body .tip-info {
     grid-row: 1/4;
     margin: 0;
-    height: 95%;
+    height: 100%;
   }
   .main .app-body .tip-info .tip-amount-person {
-    padding-top: 1.5em;
+    padding-top: 2em;
   }
   .main .app-body .tip-info .tip-total-person {
-    padding-bottom: 4.5em;
+    padding-bottom: 6.5em;
   }
 }/*# sourceMappingURL=largedevices.css.map */

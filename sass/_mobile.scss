@@ -36,7 +36,7 @@
             text-align: right;
             font-size: $secondary-size;
             border: none;
-            width: 100%;
+            width: 90%;
           }
         }
       }
@@ -118,7 +118,6 @@
             color: $strong-cyan;
           }
         }
-
         &__cta {
           padding: 1em 2em;
           font-weight: $secondary-weight;
@@ -128,6 +127,7 @@
           border: none;
           background-color: $strong-cyan;
           color: $very-dark-cyan;
+          cursor: pointer;
         }
       }
     }

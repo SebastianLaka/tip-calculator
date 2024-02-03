@@ -6,7 +6,7 @@
   .main {
     padding: 3.5em 0;
     height: 100lvh;
-    max-width: 950px;
+    max-width: 975px;
     width: 100%;
     margin: 0 auto;
     .app-header {
@@ -33,7 +33,10 @@
         grid-row: 2/3;
         .tip-buttons-area {
           &__button {
-            width: 30%;
+            width: 31%;
+            margin: 0.25em 0;
+            padding: .25em 1em;
+            font-size: $secondary-size;
           }
         }
       }
@@ -45,12 +48,12 @@
       .tip-info {
         grid-row: 1/4;
         margin: 0;
-        height: 95%;
+        height: 100%;
         .tip-amount-person {
-          padding-top: 1.5em;
+          padding-top: 2em;
         }
         .tip-total-person {
-          padding-bottom: 4.5em;
+          padding-bottom: 6.5em;
         }
       }
     }
