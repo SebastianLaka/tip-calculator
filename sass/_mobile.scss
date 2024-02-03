@@ -91,8 +91,13 @@
       }
       .people-area {
         padding: 0.1em 0;
-        &__heading {
-          color: $dark-grayish-cyan;
+        .people-area-heading {
+          display: flex;
+          justify-content: space-between;
+          &__p-error {
+            color: rgb(173, 69, 69);
+            text-align: right;
+          }
         }
         .amount-people {
           padding: 0.5em 0.6em;
@@ -102,7 +107,7 @@
             font-size: $secondary-size;
             border: none;
             border-radius: 0.2em;
-            width: 90%;
+            width: 80%;
             transition: border 0.3s;
           }
           &__input:hover {

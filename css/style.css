@@ -123,8 +123,17 @@
   .main .app-body .people-area {
     padding: 0.1em 0;
   }
-  .main .app-body .people-area__heading {
-    color: hsl(186, 14%, 43%);
+  .main .app-body .people-area .people-area-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main .app-body .people-area .people-area-heading__p-error {
+    color: rgb(173, 69, 69);
+    text-align: right;
   }
   .main .app-body .people-area .amount-people {
     padding: 0.5em 0.6em;
@@ -135,7 +144,7 @@
     font-size: 1.5rem;
     border: none;
     border-radius: 0.2em;
-    width: 90%;
+    width: 80%;
     -webkit-transition: border 0.3s;
     transition: border 0.3s;
   }
@@ -251,6 +260,9 @@
     grid-column: 0/1;
     grid-row: 3/4;
     padding: 1em 0;
+  }
+  .main .app-body .people-area .amount-people__input {
+    width: 90%;
   }
   .main .app-body .tip-info {
     grid-row: 1/4;

@@ -35,7 +35,7 @@
           &__button {
             width: 31%;
             margin: 0.25em 0;
-            padding: .25em 1em;
+            padding: 0.25em 1em;
             font-size: $secondary-size;
           }
         }
@@ -44,6 +44,11 @@
         grid-column: 0/1;
         grid-row: 3/4;
         padding: 1em 0;
+        .amount-people {
+          &__input {
+            width: 90%;
+          }
+        }
       }
       .tip-info {
         grid-row: 1/4;
