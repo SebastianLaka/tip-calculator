@@ -101,11 +101,11 @@
             text-align: right;
             font-size: $secondary-size;
             border: none;
-            border-radius: .2em;
+            border-radius: 0.2em;
             width: 90%;
-            transition: border .3s;
+            transition: border 0.3s;
           }
-          &__input:hover{
+          &__input:hover {
             border: 2px solid $strong-cyan;
           }
         }
@@ -148,7 +148,11 @@
           border: none;
           background-color: $strong-cyan;
           color: $very-dark-cyan;
+          transition: background-color 0.3s;
           cursor: pointer;
+        }
+        &__cta:hover {
+          background-color: $strong-cyan-hover;
         }
       }
     }

@@ -198,7 +198,12 @@
     border: none;
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
     cursor: pointer;
+  }
+  .main .app-body .tip-info__cta:hover {
+    background-color: hsl(172, 61%, 81%);
   }
 }
 @media (min-width: 992px) {
