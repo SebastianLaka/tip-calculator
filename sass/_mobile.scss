@@ -38,7 +38,7 @@
             border: none;
             width: 90%;
             border-radius: 0.2em;
-            transition: border;
+            transition: border 0.3s;
           }
           &__input:hover {
             border: 2px solid $strong-cyan;
@@ -65,16 +65,27 @@
             background-color: $very-dark-cyan;
             color: $white;
             font-family: inherit;
+            transition: background-color 0.3s;
             cursor: pointer;
             &--custom {
               background-color: $white;
               color: $dark-grayish-cyan;
+              border-radius: 0.2em;
+              border: none;
               text-align: center;
+              transition: background-color 0.3s, border 0.3s;
               cursor: text;
               &::placeholder {
                 color: $dark-grayish-cyan;
               }
             }
+          }
+          &__button:hover {
+            background-color: $strong-cyan;
+          }
+          &__button:last-child:hover {
+            background-color: $white;
+            border: 2px solid $strong-cyan;
           }
         }
       }

@@ -51,8 +51,8 @@
     border: none;
     width: 90%;
     border-radius: 0.2em;
-    -webkit-transition: border;
-    transition: border;
+    -webkit-transition: border 0.3s;
+    transition: border 0.3s;
   }
   .main .app-body .bill-section .price-area__input:hover {
     border: 2px solid hsl(172, 67%, 45%);
@@ -84,12 +84,18 @@
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
     font-family: inherit;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
     cursor: pointer;
   }
   .main .app-body .tip-area .tip-buttons-area__button--custom {
     background-color: hsl(0, 0%, 100%);
     color: hsl(186, 14%, 43%);
+    border-radius: 0.2em;
+    border: none;
     text-align: center;
+    -webkit-transition: background-color 0.3s, border 0.3s;
+    transition: background-color 0.3s, border 0.3s;
     cursor: text;
   }
   .main .app-body .tip-area .tip-buttons-area__button--custom::-webkit-input-placeholder {
@@ -106,6 +112,13 @@
   }
   .main .app-body .tip-area .tip-buttons-area__button--custom::placeholder {
     color: hsl(186, 14%, 43%);
+  }
+  .main .app-body .tip-area .tip-buttons-area__button:hover {
+    background-color: hsl(172, 67%, 45%);
+  }
+  .main .app-body .tip-area .tip-buttons-area__button:last-child:hover {
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(172, 67%, 45%);
   }
   .main .app-body .people-area {
     padding: 0.1em 0;
