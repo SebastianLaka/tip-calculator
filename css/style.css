@@ -134,7 +134,13 @@
     text-align: right;
     font-size: 1.5rem;
     border: none;
+    border-radius: 0.2em;
     width: 90%;
+    -webkit-transition: border 0.3s;
+    transition: border 0.3s;
+  }
+  .main .app-body .people-area .amount-people__input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
   }
   .main .app-body .tip-info {
     display: -webkit-box;

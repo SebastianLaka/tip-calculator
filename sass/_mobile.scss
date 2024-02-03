@@ -101,7 +101,12 @@
             text-align: right;
             font-size: $secondary-size;
             border: none;
+            border-radius: .2em;
             width: 90%;
+            transition: border .3s;
+          }
+          &__input:hover{
+            border: 2px solid $strong-cyan;
           }
         }
       }
