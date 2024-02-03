@@ -11,125 +11,125 @@
       background-position: center;
       padding: 4.5em;
     }
-      .app-body {
-        background-color: $white;
-        padding: 1em 1.5em;
-        border-top-right-radius: 1.75em;
-        border-top-left-radius: 1.75em;
-        height: 100svh;
-        .bill-section {
-          padding: 0.75em 0 0.1em 0;
-          &__bill {
-            color: $dark-grayish-cyan;
-          }
-          .price-area {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.75em;
-            &__dollar-symbol {
-              width: 1em;
-              height: 1em;
-            }
-            &__input {
-              font-family: inherit;
-              text-align: right;
-              font-size: $secondary-size;
-              border: none;
-              width: 100%;
-            }
-          }
+    .app-body {
+      background-color: $white;
+      padding: 1em 1.5em;
+      border-top-right-radius: 1.75em;
+      border-top-left-radius: 1.75em;
+      height: 100svh;
+      .bill-section {
+        padding: 0.75em 0 0.1em 0;
+        &__bill {
+          color: $dark-grayish-cyan;
         }
-        .tip-area {
-          &__heading {
-            color: $dark-grayish-cyan;
-          }
-          .tip-buttons-area {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            padding: 0.75em 0;
-            &__button {
-              padding: 0.5em 1em;
-              border-radius: 0.4em;
-              border: none;
-              width: 45%;
-              margin: 0.75em 0;
-              font-size: $primary-size;
-              background-color: $very-dark-cyan;
-              color: $white;
-              font-family: inherit;
-              cursor: pointer;
-              &--custom {
-                background-color: $white;
-                color: $dark-grayish-cyan;
-                text-align: center;
-                &::placeholder {
-                  color: $dark-grayish-cyan;
-                }
-              }
-            }
-          }
-        }
-        .people-area {
-          padding: 0.1em 0;
-          &__heading {
-            color: $dark-grayish-cyan;
-          }
-          .amount-people {
-            padding: 0.5em 0.6em;
-            &__input {
-              font-family: inherit;
-              text-align: right;
-              font-size: $secondary-size;
-              border: none;
-              width: 90%;
-            }
-          }
-        }
-        .tip-info {
+        .price-area {
           display: flex;
-          flex-direction: column;
           justify-content: space-between;
-          background-color: $very-dark-cyan;
-          border-radius: 0.8em;
-          padding: 1.75em;
-          margin-top: 0.8em;
-          .tip-amount-person,
-          .tip-total-person {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 1em;
-            .tip-person,
-            .tip-total {
-              &__p-primary {
-                color: $very-light-grayish-cyan;
-              }
-              &__p-secondary {
-                font-size: 0.75rem;
-                color: $grayish-cyan;
-              }
-            }
-            &__amount {
-              font-size: $secondary-size;
-              color: $strong-cyan;
-            }
+          align-items: center;
+          padding: 0.75em;
+          &__dollar-symbol {
+            width: 1em;
+            height: 1em;
           }
-
-          &__cta {
-            padding: 1em 2em;
-            font-weight: $secondary-weight;
-            font-size: $primary-size;
+          &__input {
             font-family: inherit;
-            border-radius: 0.4em;
+            text-align: right;
+            font-size: $secondary-size;
             border: none;
-            background-color: $strong-cyan;
-            color: $very-dark-cyan;
+            width: 100%;
           }
         }
       }
+      .tip-area {
+        &__heading {
+          color: $dark-grayish-cyan;
+        }
+        .tip-buttons-area {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          padding: 0.75em 0;
+          &__button {
+            padding: 0.5em 1em;
+            border-radius: 0.4em;
+            border: none;
+            width: 45%;
+            margin: 0.75em 0;
+            font-size: $primary-size;
+            background-color: $very-dark-cyan;
+            color: $white;
+            font-family: inherit;
+            cursor: pointer;
+            &--custom {
+              background-color: $white;
+              color: $dark-grayish-cyan;
+              text-align: center;
+              cursor: text;
+              &::placeholder {
+                color: $dark-grayish-cyan;
+              }
+            }
+          }
+        }
+      }
+      .people-area {
+        padding: 0.1em 0;
+        &__heading {
+          color: $dark-grayish-cyan;
+        }
+        .amount-people {
+          padding: 0.5em 0.6em;
+          &__input {
+            font-family: inherit;
+            text-align: right;
+            font-size: $secondary-size;
+            border: none;
+            width: 90%;
+          }
+        }
+      }
+      .tip-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $very-dark-cyan;
+        border-radius: 0.8em;
+        padding: 1.75em;
+        margin-top: 0.8em;
+        .tip-amount-person,
+        .tip-total-person {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 1em;
+          .tip-person,
+          .tip-total {
+            &__p-primary {
+              color: $very-light-grayish-cyan;
+            }
+            &__p-secondary {
+              font-size: 0.75rem;
+              color: $grayish-cyan;
+            }
+          }
+          &__amount {
+            font-size: $secondary-size;
+            color: $strong-cyan;
+          }
+        }
+
+        &__cta {
+          padding: 1em 2em;
+          font-weight: $secondary-weight;
+          font-size: $primary-size;
+          font-family: inherit;
+          border-radius: 0.4em;
+          border: none;
+          background-color: $strong-cyan;
+          color: $very-dark-cyan;
+        }
+      }
     }
-  
+  }
 }

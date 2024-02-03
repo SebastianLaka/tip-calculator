@@ -84,6 +84,7 @@
     background-color: hsl(0, 0%, 100%);
     color: hsl(186, 14%, 43%);
     text-align: center;
+    cursor: text;
   }
   .main .app-body .tip-area .tip-buttons-area__button--custom::-webkit-input-placeholder {
     color: hsl(186, 14%, 43%);
