@@ -50,6 +50,12 @@
     font-size: 1.5rem;
     border: none;
     width: 90%;
+    border-radius: 0.2em;
+    -webkit-transition: border;
+    transition: border;
+  }
+  .main .app-body .bill-section .price-area__input:hover {
+    border: 2px solid hsl(172, 67%, 45%);
   }
   .main .app-body .tip-area__heading {
     color: hsl(186, 14%, 43%);

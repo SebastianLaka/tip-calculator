@@ -37,6 +37,11 @@
             font-size: $secondary-size;
             border: none;
             width: 90%;
+            border-radius: 0.2em;
+            transition: border;
+          }
+          &__input:hover {
+            border: 2px solid $strong-cyan;
           }
         }
       }
