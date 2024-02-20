@@ -18,6 +18,10 @@ console.log(
   totalAmount,
   resetButton
 );
+const tipCalculator = () =>{
+
+}
+tipCalculator();
 const errorInfo = (e) => {
   e.preventDefault();
   if (numOfPeople.value = '0') {
