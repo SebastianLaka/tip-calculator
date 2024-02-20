@@ -20,7 +20,7 @@ console.log(
 );
 const errorInfo = (e) => {
   e.preventDefault();
-  if ((numOfPeople.value = "0")) {
+  if (numOfPeople.value = '0') {
     error.classList.toggle("hidden");
   }
 };

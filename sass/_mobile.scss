@@ -37,6 +37,7 @@
             font-size: $secondary-size;
             border: none;
             width: 90%;
+            padding: 0 0.5em;
             border-radius: 0.2em;
             transition: border 0.3s;
           }
@@ -109,6 +110,7 @@
             height: 1em;
           }
           &__input {
+            padding: 0 0.5em;
             font-family: inherit;
             text-align: right;
             font-size: $secondary-size;

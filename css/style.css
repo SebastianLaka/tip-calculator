@@ -50,6 +50,7 @@
     font-size: 1.5rem;
     border: none;
     width: 90%;
+    padding: 0 0.5em;
     border-radius: 0.2em;
     -webkit-transition: border 0.3s;
     transition: border 0.3s;
@@ -151,6 +152,7 @@
     height: 1em;
   }
   .main .app-body .people-area .amount-people__input {
+    padding: 0 0.5em;
     font-family: inherit;
     text-align: right;
     font-size: 1.5rem;
