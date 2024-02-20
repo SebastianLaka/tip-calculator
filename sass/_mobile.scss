@@ -97,7 +97,6 @@
           &__p-error {
             color: rgb(173, 69, 69);
             text-align: right;
-            display: none;
           }
         }
         .amount-people {
@@ -121,6 +120,9 @@
           &__input:hover {
             border: 2px solid $strong-cyan;
           }
+        }
+        .hidden {
+          display: none;
         }
       }
       .tip-info {
