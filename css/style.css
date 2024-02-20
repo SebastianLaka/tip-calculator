@@ -74,7 +74,7 @@
         flex-wrap: wrap;
     padding: 0.75em 0;
   }
-  .main .app-body .tip-area .tip-buttons-area__button {
+  .main .app-body .tip-area .tip-buttons-area__button, .main .app-body .tip-area .tip-buttons-area__custom {
     padding: 0.5em 1em;
     border-radius: 0.4em;
     border: none;
@@ -84,39 +84,38 @@
     background-color: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
     font-family: inherit;
+    text-align: center;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
     cursor: pointer;
   }
-  .main .app-body .tip-area .tip-buttons-area__button--custom {
+  .main .app-body .tip-area .tip-buttons-area__custom {
     background-color: hsl(0, 0%, 100%);
     color: hsl(186, 14%, 43%);
-    border-radius: 0.2em;
     border: none;
-    text-align: center;
     -webkit-transition: background-color 0.3s, border 0.3s;
     transition: background-color 0.3s, border 0.3s;
     cursor: text;
   }
-  .main .app-body .tip-area .tip-buttons-area__button--custom::-webkit-input-placeholder {
+  .main .app-body .tip-area .tip-buttons-area__custom::-webkit-input-placeholder {
     color: hsl(186, 14%, 43%);
   }
-  .main .app-body .tip-area .tip-buttons-area__button--custom::-moz-placeholder {
+  .main .app-body .tip-area .tip-buttons-area__custom::-moz-placeholder {
     color: hsl(186, 14%, 43%);
   }
-  .main .app-body .tip-area .tip-buttons-area__button--custom:-ms-input-placeholder {
+  .main .app-body .tip-area .tip-buttons-area__custom:-ms-input-placeholder {
     color: hsl(186, 14%, 43%);
   }
-  .main .app-body .tip-area .tip-buttons-area__button--custom::-ms-input-placeholder {
+  .main .app-body .tip-area .tip-buttons-area__custom::-ms-input-placeholder {
     color: hsl(186, 14%, 43%);
   }
-  .main .app-body .tip-area .tip-buttons-area__button--custom::placeholder {
+  .main .app-body .tip-area .tip-buttons-area__custom::placeholder {
     color: hsl(186, 14%, 43%);
   }
-  .main .app-body .tip-area .tip-buttons-area__button:hover {
+  .main .app-body .tip-area .tip-buttons-area__custom:hover {
     background-color: hsl(172, 67%, 45%);
   }
-  .main .app-body .tip-area .tip-buttons-area__button:last-child:hover {
+  .main .app-body .tip-area .tip-buttons-area__custom:last-child:hover {
     background-color: hsl(0, 0%, 100%);
     border: 2px solid hsl(172, 67%, 45%);
   }
@@ -163,6 +162,9 @@
   }
   .main .app-body .people-area .amount-people__input:hover {
     border: 2px solid hsl(172, 67%, 45%);
+  }
+  .main .app-body .people-area .hidden {
+    display: none;
   }
   .main .app-body .tip-info {
     display: -webkit-box;
@@ -264,7 +266,7 @@
     grid-column: 0/1;
     grid-row: 2/3;
   }
-  .main .app-body .tip-area .tip-buttons-area__button {
+  .main .app-body .tip-area .tip-buttons-area__button, .main .app-body .tip-area .tip-buttons-area__custom {
     width: 31%;
     margin: 0.25em 0;
     padding: 0.25em 1em;
