@@ -18,6 +18,13 @@ console.log(
   totalAmount,
   resetButton
 );
+const errorInfo = (e) => {
+  e.preventDefault();
+  if ((numOfPeople.value = "0")) {
+    error.classList.toggle("hidden");
+  }
+};
+numOfPeople.addEventListener("click", errorInfo);
 resetButton.addEventListener("click", () => {
   billAmount.value = "";
   customButton.value = "";
