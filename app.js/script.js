@@ -8,23 +8,16 @@ const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
 
-console.log(
-  billAmount,
-  tipButtons,
-  customButton,
-  error,
-  numOfPeople,
-  tipAmount,
-  totalAmount,
-  resetButton
-);
-const tipCalculator = () =>{
+tipButtons.forEach(button => {
+  button.addEventListener('click', () =>{
+    
+  })
+  
+});
 
-}
-tipCalculator();
 const errorInfo = (e) => {
   e.preventDefault();
-  if (numOfPeople.value = '0') {
+  if ((numOfPeople.value = "0")) {
     error.classList.toggle("hidden");
   }
 };
