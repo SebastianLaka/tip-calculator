@@ -7,21 +7,18 @@ const numOfPeople = document.querySelector(".amount-people__input");
 const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
-
-tipButtons.forEach(button => {
-  button.addEventListener('click', () =>{
-    
-  })
-  
+console.log(customButton.value)
+tipButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    console.log(button.value);
+  });
 });
-
-const errorInfo = (e) => {
+numOfPeople.addEventListener("click", (e) => {
   e.preventDefault();
   if ((numOfPeople.value = "0")) {
     error.classList.toggle("hidden");
   }
-};
-numOfPeople.addEventListener("click", errorInfo);
+});
 resetButton.addEventListener("click", () => {
   billAmount.value = "";
   customButton.value = "";
