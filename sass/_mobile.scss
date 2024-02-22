@@ -118,6 +118,7 @@
             border-radius: 0.2em;
             width: 100%;
             transition: border 0.3s;
+            &:value
           }
           &__input:hover {
             border: 2px solid $strong-cyan;
