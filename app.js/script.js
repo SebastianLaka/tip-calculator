@@ -7,12 +7,13 @@ const numOfPeople = document.querySelector(".amount-people__input");
 const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
-console.log(customButton.value)
+
 tipButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    console.log(button.value);
+    const buttonValue = Number(button.value);
   });
 });
+console.log(1);
 numOfPeople.addEventListener("click", (e) => {
   e.preventDefault();
   if ((numOfPeople.value = "0")) {
