@@ -7,19 +7,19 @@ const numOfPeople = document.querySelector(".amount-people__input");
 const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
-// const x = (billAmount.value = 142.55);
-// const y = (numOfPeople.value = 5);
-// const f = 15;
-// const z = x / y
-// console.log(z);
+const x = (billAmount.value = 142.55);
+const y = (numOfPeople.value = 5);
+const f = 0.15;
+const z = x / y * f
+console.log(z);
 const main = () => {
   tipButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const getNumber = Number(button.value);
-      console.log(getNumber);
+      const getValue = Number(button.value);
+      console.log(getValue);
       const getTotalTipValue = () => {
-        const tipTotalAmount = (billAmount.value / numOfPeople.value);
-        const tipPersonAmount = (tipTotalAmount / getNumber);
+        const tipTotalAmount = billAmount.value / numOfPeople.value;
+        const tipPersonAmount = (tipTotalAmount * getValue) / 100;
         const getTotalAmount = tipTotalAmount + tipPersonAmount;
         console.log(
           (totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`)
