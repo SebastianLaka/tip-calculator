@@ -74,12 +74,13 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 0.75em 0;
+    gap: 0 0.5em;
   }
   .main .app-body .tip-area .tip-buttons-area__button, .main .app-body .tip-area .tip-buttons-area__custom {
     padding: 0.5em 1em;
     border-radius: 0.4em;
     border: none;
-    width: 45%;
+    width: 50%;
     margin: 0.75em 0;
     font-size: 1rem;
     background-color: hsl(183, 100%, 15%);

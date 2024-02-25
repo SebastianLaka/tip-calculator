@@ -7,40 +7,37 @@ const numOfPeople = document.querySelector(".amount-people__input");
 const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
-const x = (billAmount.value = 142.55);
-const y = (numOfPeople.value = 5);
-const f = 0.15;
-const z = x / y * f
-console.log(z);
 const main = () => {
   tipButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const getValue = Number(button.value);
-      console.log(getValue);
       const getTotalTipValue = () => {
         const tipTotalAmount = billAmount.value / numOfPeople.value;
         const tipPersonAmount = (tipTotalAmount * getValue) / 100;
         const getTotalAmount = tipTotalAmount + tipPersonAmount;
-        console.log(
-          (totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`)
-        );
-        console.log(
-          (tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`)
-        );
+        totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
+        tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
+        
       };
       if (billAmount.value > 0 && numOfPeople.value > 0) {
         getTotalTipValue();
+        errorRemove();
       }
     });
   });
-  const errorRemove = () => {
-    if (Number(numOfPeople.value) > 0) {
-      error.classList.toggle("hidden");
-    }
-  };
-  numOfPeople.addEventListener("click", (e) => {
+  customButton.addEventListener("input", (e) => {
     e.preventDefault();
-    errorRemove();
+    if (customButton.value > 0) {
+      const getValue = Number(customButton.value);
+      const getCustomTipValue = () => {
+        const tipTotalAmount = billAmount.value / numOfPeople.value;
+        const tipPersonAmount = (tipTotalAmount * getValue) / 100;
+        const getTotalAmount = tipTotalAmount + tipPersonAmount;
+        totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
+        tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
+      };
+      getCustomTipValue();
+    }
   });
   resetButton.addEventListener("click", () => {
     billAmount.value = "";
