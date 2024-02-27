@@ -35,6 +35,7 @@
             font-family: inherit;
             text-align: right;
             font-size: $secondary-size;
+            color: $very-dark-cyan;
             border: none;
             width: 90%;
             padding: 0 0.5em;
@@ -68,12 +69,16 @@
             color: $white;
             font-family: inherit;
             text-align: center;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
             cursor: pointer;
+          }
+          &__button:hover {
+            background-color: $strong-cyan;
+            color: $very-dark-cyan;
           }
           &__custom {
             background-color: $white;
-            color: $dark-grayish-cyan;
+            color: $very-dark-cyan;
             border: none;
             transition: background-color 0.3s, border 0.3s;
             cursor: text;
@@ -115,6 +120,7 @@
             font-family: inherit;
             text-align: right;
             font-size: $secondary-size;
+            color: $very-dark-cyan;
             border: none;
             border-radius: 0.2em;
             width: 100%;

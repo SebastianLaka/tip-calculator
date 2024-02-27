@@ -48,6 +48,7 @@
     font-family: inherit;
     text-align: right;
     font-size: 1.5rem;
+    color: hsl(183, 100%, 15%);
     border: none;
     width: 90%;
     padding: 0 0.5em;
@@ -86,13 +87,17 @@
     color: hsl(0, 0%, 100%);
     font-family: inherit;
     text-align: center;
-    -webkit-transition: background-color 0.3s;
-    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
+  }
+  .main .app-body .tip-area .tip-buttons-area__button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
   }
   .main .app-body .tip-area .tip-buttons-area__custom {
     background-color: hsl(0, 0%, 100%);
-    color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
     border: none;
     -webkit-transition: background-color 0.3s, border 0.3s;
     transition: background-color 0.3s, border 0.3s;
@@ -157,6 +162,7 @@
     font-family: inherit;
     text-align: right;
     font-size: 1.5rem;
+    color: hsl(183, 100%, 15%);
     border: none;
     border-radius: 0.2em;
     width: 100%;
