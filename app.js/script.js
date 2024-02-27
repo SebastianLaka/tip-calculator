@@ -17,11 +17,9 @@ const main = () => {
         const getTotalAmount = tipTotalAmount + tipPersonAmount;
         totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
         tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
-        
       };
       if (billAmount.value > 0 && numOfPeople.value > 0) {
         getTotalTipValue();
-        errorRemove();
       }
     });
   });
@@ -39,6 +37,15 @@ const main = () => {
       getCustomTipValue();
     }
   });
+  const errorInfo = () => {
+    if (Number(numOfPeople.value) === 0) {
+      error.classList.add("hidden");
+    } else {
+      error.classList.remove("hidden");
+    }
+  };
+  errorInfo();
+
   resetButton.addEventListener("click", () => {
     billAmount.value = "";
     customButton.value = "";

@@ -1,12 +1,11 @@
-@use './reset' as *;
-@use './colors' as *;
-@use './fonts' as *;
+@use "./reset" as *;
+@use "./colors" as *;
+@use "./fonts" as *;
 
-@use './mobile' as *;
-@use './largedevices.scss' as *;
-@use './desktop' as *;
+@use "./mobile" as *;
+@use "./largedevices.scss" as *;
 
-body{
-    font-family: 'Space Mono', sans-serif;
-    background-color: $light-grayish-cyan;
+body {
+  font-family: "Space Mono", sans-serif;
+  background-color: $light-grayish-cyan;
 }

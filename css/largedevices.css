@@ -31,7 +31,7 @@
     height: 60%;
     border-radius: 1.75em;
     gap: 1em 2em;
-    padding: 1em 2em;
+    padding: 2em;
   }
   .main .app-body .bill-section {
     padding: 1.25em 0;
@@ -58,12 +58,13 @@
   .main .app-body .tip-info {
     grid-row: 1/4;
     margin: 0;
+    padding: 2em;
     height: 100%;
   }
   .main .app-body .tip-info .tip-amount-person {
-    padding-top: 2em;
+    padding-top: 1.75em;
   }
   .main .app-body .tip-info .tip-total-person {
-    padding-bottom: 6.5em;
+    padding-bottom: 4.25em;
   }
 }/*# sourceMappingURL=largedevices.css.map */
