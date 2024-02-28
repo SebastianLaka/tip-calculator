@@ -67,4 +67,7 @@
   .main .app-body .tip-info .tip-total-person {
     padding-bottom: 4.25em;
   }
+  .main .show {
+    display: block;
+  }
 }/*# sourceMappingURL=largedevices.css.map */

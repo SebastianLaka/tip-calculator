@@ -172,8 +172,8 @@
   .main .app-body .people-area .amount-people__input:hover {
     border: 2px solid hsl(172, 67%, 45%);
   }
-  .main .app-body .people-area .amount-people .hidden {
-    display: none;
+  .main .app-body .show {
+    display: block;
   }
   .main .app-body .tip-info {
     display: -webkit-box;
@@ -300,6 +300,9 @@
   }
   .main .app-body .tip-info .tip-total-person {
     padding-bottom: 4.25em;
+  }
+  .main .show {
+    display: block;
   }
 }
 body {

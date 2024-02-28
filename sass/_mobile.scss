@@ -129,10 +129,10 @@
           &__input:hover {
             border: 2px solid $strong-cyan;
           }
-          .hidden {
-            display: none;
-          }
         }
+      }
+      .show {
+        display: block;
       }
       .tip-info {
         display: flex;

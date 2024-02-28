@@ -52,6 +52,7 @@
           }
         }
       }
+
       .tip-info {
         grid-row: 1/4;
         margin: 0;
@@ -64,6 +65,9 @@
           padding-bottom: 4.25em;
         }
       }
+    }
+    .show {
+      display: block;
     }
   }
 }

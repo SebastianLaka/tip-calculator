@@ -7,51 +7,40 @@ const numOfPeople = document.querySelector(".amount-people__input");
 const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
-const main = () => {
-  tipButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const getValue = Number(button.value);
-      const getTotalTipValue = () => {
-        const tipTotalAmount = billAmount.value / numOfPeople.value;
-        const tipPersonAmount = (tipTotalAmount * getValue) / 100;
-        const getTotalAmount = tipTotalAmount + tipPersonAmount;
-        totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
-        tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
-      };
-      if (billAmount.value > 0 && numOfPeople.value > 0) {
-        getTotalTipValue();
-      }
-    });
-  });
-  customButton.addEventListener("input", (e) => {
-    e.preventDefault();
-    if (customButton.value > 0) {
-      const getValue = Number(customButton.value);
-      const getCustomTipValue = () => {
-        const tipTotalAmount = billAmount.value / numOfPeople.value;
-        const tipPersonAmount = (tipTotalAmount * getValue) / 100;
-        const getTotalAmount = tipTotalAmount + tipPersonAmount;
-        totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
-        tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
-      };
-      getCustomTipValue();
-    }
-  });
-  const errorInfo = () => {
-    if (Number(numOfPeople.value) === 0) {
-      error.classList.add("hidden");
-    } else {
-      error.classList.remove("hidden");
-    }
-  };
-  errorInfo();
 
-  resetButton.addEventListener("click", () => {
-    billAmount.value = "";
-    customButton.value = "";
-    numOfPeople.value = "";
-    tipAmount.textContent = "$ 0.00";
-    totalAmount.textContent = "$ 0.00";
-  });
+const getTotalTipValue = (button) => {
+  const tipTotalAmount = billAmount.value / numOfPeople.value;
+  const tipPersonAmount = (tipTotalAmount * button) / 100;
+  const getTotalAmount = tipTotalAmount + tipPersonAmount;
+  totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
+  tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
 };
-main();
+
+tipButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const getValue = Number(button.value);
+    if (billAmount.value > 0 && numOfPeople.value > 0) {
+      getTotalTipValue(getValue);
+    }
+  });
+});
+customButton.addEventListener("input", (e) => {
+  e.preventDefault();
+  const getValue = Number(customButton.value);
+  if (customButton.value > 0) {
+    getTotalTipValue(getValue);
+  }
+});
+numOfPeople.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (Number(numOfPeople.value === 0)) {
+    error.classList.toggle("show");
+  }
+});
+resetButton.addEventListener("click", () => {
+  billAmount.value = "";
+  customButton.value = "";
+  numOfPeople.value = "";
+  tipAmount.textContent = "$ 0.00";
+  totalAmount.textContent = "$ 0.00";
+});
