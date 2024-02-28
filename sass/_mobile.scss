@@ -105,6 +105,9 @@
             text-align: right;
             display: none;
           }
+          .show {
+            display: block;
+          }
         }
         .amount-people {
           display: flex;
@@ -130,9 +133,6 @@
             border: 2px solid $strong-cyan;
           }
         }
-      }
-      .show {
-        display: block;
       }
       .tip-info {
         display: flex;

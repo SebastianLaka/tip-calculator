@@ -52,6 +52,9 @@
     grid-row: 3/4;
     padding: 1em 0;
   }
+  .main .app-body .people-area .people-area-heading .show {
+    display: block;
+  }
   .main .app-body .people-area .amount-people__input {
     width: 90%;
   }
@@ -66,8 +69,5 @@
   }
   .main .app-body .tip-info .tip-total-person {
     padding-bottom: 4.25em;
-  }
-  .main .show {
-    display: block;
   }
 }/*# sourceMappingURL=largedevices.css.map */

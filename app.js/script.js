@@ -21,6 +21,9 @@ tipButtons.forEach((button) => {
     const getValue = Number(button.value);
     if (billAmount.value > 0 && numOfPeople.value > 0) {
       getTotalTipValue(getValue);
+      errorInfoRemove()
+    } else if (Number(numOfPeople.value) === 0) {
+      errorInfoAdd();
     }
   });
 });
@@ -29,18 +32,23 @@ customButton.addEventListener("input", (e) => {
   const getValue = Number(customButton.value);
   if (customButton.value > 0) {
     getTotalTipValue(getValue);
+    errorInfoRemove();
+  } else if (Number(numOfPeople.value) === 0) {
+    numOfPeople.addEventListener("input", errorInfoAdd());
   }
 });
-numOfPeople.addEventListener("click", (e) => {
-  e.preventDefault();
-  if (Number(numOfPeople.value === 0)) {
-    error.classList.toggle("show");
-  }
-});
+const errorInfoAdd = () => {
+  error.classList.add("show");
+};
+const errorInfoRemove = () => {
+  error.classList.remove("show");
+};
+
 resetButton.addEventListener("click", () => {
   billAmount.value = "";
   customButton.value = "";
   numOfPeople.value = "";
+  errorInfoRemove();
   tipAmount.textContent = "$ 0.00";
   totalAmount.textContent = "$ 0.00";
 });
