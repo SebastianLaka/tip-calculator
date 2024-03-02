@@ -7,7 +7,6 @@ const numOfPeople = document.querySelector(".amount-people__input");
 const tipAmount = document.querySelector(".tip-amount-person__amount");
 const totalAmount = document.querySelector(".tip-total-person__amount");
 const resetButton = document.querySelector(".tip-info__cta");
-
 const getTotalTipValue = (button) => {
   const tipTotalAmount = billAmount.value / numOfPeople.value;
   const tipPersonAmount = (tipTotalAmount * button) / 100;
@@ -15,13 +14,12 @@ const getTotalTipValue = (button) => {
   totalAmount.textContent = `$ ${Number(getTotalAmount).toFixed(2)}`;
   tipAmount.textContent = `$ ${Number(tipPersonAmount).toFixed(2)}`;
 };
-
 tipButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const getValue = Number(button.value);
     if (billAmount.value > 0 && numOfPeople.value > 0) {
       getTotalTipValue(getValue);
-      errorInfoRemove()
+      errorInfoRemove();
     } else if (Number(numOfPeople.value) === 0) {
       errorInfoAdd();
     }
@@ -30,20 +28,21 @@ tipButtons.forEach((button) => {
 customButton.addEventListener("input", (e) => {
   e.preventDefault();
   const getValue = Number(customButton.value);
-  if (customButton.value > 0) {
+  if (customButton.value >= 0 && numOfPeople.value > 0) {
     getTotalTipValue(getValue);
     errorInfoRemove();
-  } else if (Number(numOfPeople.value) === 0) {
-    numOfPeople.addEventListener("input", errorInfoAdd());
+  } else {
+    errorInfoAdd();
   }
 });
 const errorInfoAdd = () => {
   error.classList.add("show");
+  numOfPeople.classList.add("change-input-color");
 };
 const errorInfoRemove = () => {
   error.classList.remove("show");
+  numOfPeople.classList.remove("change-input-color");
 };
-
 resetButton.addEventListener("click", () => {
   billAmount.value = "";
   customButton.value = "";

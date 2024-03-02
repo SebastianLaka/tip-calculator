@@ -58,6 +58,9 @@
   .main .app-body .people-area .amount-people__input {
     width: 90%;
   }
+  .main .app-body .people-area .amount-people .change-input-color {
+    border: 1px solid rgb(255, 0, 0);
+  }
   .main .app-body .tip-info {
     grid-row: 1/4;
     margin: 0;

@@ -129,6 +129,9 @@
             width: 100%;
             transition: border 0.3s;
           }
+          .change-input-color{
+            border: 1px solid rgb(255, 0, 0);
+          }
           &__input:hover {
             border: 2px solid $strong-cyan;
           }
